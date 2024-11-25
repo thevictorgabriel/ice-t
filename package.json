@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "express": "^4.21.1",
+    "mysql2": "^3.11.4",
+    "node": "^20.18.1",
+    "nodemon": "^3.1.7"
+  },
+  "name": "ice-t",
+  "description": "Sistema Web para gestão de Manutenção dos Ares-condicionado  O Sistema de gerenciamento de ares-condicionados é uma plataforma abrangente projetada para facilitar na manutenção e o uso eficiente dos equipamentos dentro de uma sala no campus universitário. Este sistema visa otimizar esse gerenciamento dos ares-condicionados.",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Victor Gabriel e Liliene Picanço",
+  "license": "ISC"
+}
