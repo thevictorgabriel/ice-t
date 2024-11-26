@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ordem de Serviço</title>
-    <link rel="stylesheet" href="../../css/administrador.css">
+    <link rel="stylesheet" href="./adm-style/adm-ordem-servico.css">
     <link rel="icon" href="../../img/logo-IceT.png" type="image/x-icon">
 </head>
 <body>
@@ -49,7 +49,83 @@
         </aside>
         <main class="main-content">
             <h2>Ordem de Serviço</h2>
-            <div class="content-box"></div>
+            <div class="content-box">
+                <main>
+                    <section class="order-header">
+                      <h2>Sem título</h2>
+                      <div class="order-details">
+                        <p><strong>Atividade:</strong> Ordem de serviço - Cliente exemplo</p>
+                        <p><strong>Criado por:</strong> Renata em 25/08/2024 15:45</p>
+                        <p><strong>Formulário:</strong> Ordem de Serviço</p>
+                        <p><strong>Modificado por:</strong> Renata em 26/08/2024 18:33</p>
+                      </div>
+                      <button class="btn-report">Ver relatório</button>
+                    </section>
+                
+                    <form class="order-form">
+                      <fieldset>
+                        <legend>Equipamento</legend>
+                        <label for="equipamento">Selecione o equipamento:</label>
+                        <select id="equipamento" name="equipamento">
+                          <option value="paleta-ar">Paleta do ar</option>
+                        </select>
+                      </fieldset>
+                
+                      <fieldset>
+                        <legend>Informações da empresa/cliente</legend>
+                        <label for="informacoes">Informações:</label>
+                        <textarea id="informacoes" name="informacoes" placeholder="Empresa especializada em manutenção..."></textarea>
+                      </fieldset>
+                
+                      <fieldset>
+                        <legend>Início do trabalho</legend>
+                        <label for="horario">Horário de início:</label>
+                        <input type="time" id="horario" name="horario">
+                
+                        <label for="local">Local:</label>
+                        <input type="text" id="local" name="local" placeholder="Local">
+                      </fieldset>
+                
+                      <fieldset>
+                        <legend>Descrição do diagnóstico</legend>
+                        <label for="diagnostico">Descreva o diagnóstico:</label>
+                        <textarea id="diagnostico" name="diagnostico" placeholder="Descreva o problema aqui..."></textarea>
+                      </fieldset>
+                
+                      <fieldset>
+                        <legend>Descrição da solução</legend>
+                        <label for="solucao">Descreva a solução aplicada:</label>
+                        <textarea id="solucao" name="solucao" placeholder="Descreva a solução aplicada..."></textarea>
+                      </fieldset>
+                
+                      <fieldset>
+                        <legend>Serviço realizado</legend>
+                        <label for="servico">Selecione o serviço realizado:</label>
+                        <select id="servico" name="servico">
+                          <option value="limpeza-geral">Limpeza geral</option>
+                        </select>
+                      </fieldset>
+                
+                      <fieldset>
+                        <legend>Peças solicitadas</legend>
+                        <label for="pecas-solicitadas">Descreva as peças solicitadas:</label>
+                        <textarea id="pecas-solicitadas" name="pecas-solicitadas" placeholder="Nenhuma"></textarea>
+                      </fieldset>
+                
+                      <fieldset>
+                        <legend>Peças trocadas</legend>
+                        <label for="pecas-trocadas">Descreva as peças trocadas:</label>
+                        <textarea id="pecas-trocadas" name="pecas-trocadas" placeholder="Nenhuma"></textarea>
+                      </fieldset>
+                
+                      <fieldset>
+                        <legend>Registro fotográfico</legend>
+                        <label for="fotos">Faça o upload das fotos:</label>
+                        <input type="file" id="fotos" name="fotos">
+                      </fieldset>
+                    </form>
+                  </main>
+            </div>
         </main>
     </div>
 </body>
