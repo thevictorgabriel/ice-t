@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Equipamentos</title>
-    <link rel="stylesheet" href="../../css/administrador.css">
+    <link rel="stylesheet" href="./adm-style/adm-equpamento.css">
     <link rel="icon" href="../../img/logo-IceT.png" type="image/x-icon">
 </head>
 <body>
@@ -49,7 +49,80 @@
         </aside>
         <main class="main-content">
             <h2>Equipamentos</h2>
-            <div class="content-box"></div>
+            <div class="content-box">
+                <main>
+                    <form class="equipment-form">
+                      <fieldset>
+                        <legend>Informações do Equipamento</legend>
+                
+                        <label for="tipo">Tipo do equipamento:</label>
+                        <select id="tipo" name="tipo" required>
+                          <option value="" disabled selected>Selecione</option>
+                          <option value="split">Ar-condicionado Split</option>
+                          <option value="janela">Ar-condicionado de Janela</option>
+                          <option value="cassete">Ar-condicionado Cassete</option>
+                          <option value="portatil">Ar-condicionado Portátil</option>
+                        </select>
+                
+                        <label for="modelo">Modelo:</label>
+                        <input type="text" id="modelo" name="modelo" placeholder="Modelo do equipamento" required>
+                
+                        <label for="marca">Marca:</label>
+                        <input type="text" id="marca" name="marca" placeholder="Marca do equipamento" required>
+                
+                        <label for="capacidade">Capacidade (BTUs):</label>
+                        <input type="number" id="capacidade" name="capacidade" placeholder="Ex.: 12000" required>
+                      </fieldset>
+                
+                      <fieldset>
+                        <legend>Localização do Equipamento</legend>
+                
+                        <label for="bloco">Bloco:</label>
+                        <input type="text" id="bloco" name="bloco" placeholder="Ex.: Bloco A" required>
+                
+                        <label for="sala">Sala:</label>
+                        <input type="text" id="sala" name="sala" placeholder="Ex.: Sala 101" required>
+                
+                        <label for="andar">Andar:</label>
+                        <input type="text" id="andar" name="andar" placeholder="Ex.: 1º Andar" required>
+                      </fieldset>
+                
+                      <fieldset>
+                        <legend>Detalhes Adicionais</legend>
+                
+                        <label for="serie">Número de Série:</label>
+                        <input type="text" id="serie" name="serie" placeholder="Número de série do equipamento" required>
+                
+                        <label for="fabricacao">Data de Fabricação:</label>
+                        <input type="date" id="fabricacao" name="fabricacao" required>
+                
+                        <label for="instalacao">Data de Instalação:</label>
+                        <input type="date" id="instalacao" name="instalacao">
+                
+                        <label for="ultima-manutencao">Data da Última Manutenção:</label>
+                        <input type="date" id="ultima-manutencao" name="ultima-manutencao">
+                      </fieldset>
+                
+                      <fieldset>
+                        <legend>Informações Adicionais</legend>
+                
+                        <label for="estado">Estado do Equipamento:</label>
+                        <select id="estado" name="estado" required>
+                          <option value="" disabled selected>Selecione</option>
+                          <option value="novo">Novo</option>
+                          <option value="bom">Bom</option>
+                          <option value="regular">Regular</option>
+                          <option value="ruim">Ruim</option>
+                        </select>
+                
+                        <label for="descricao">Descrição Adicional:</label>
+                        <textarea id="descricao" name="descricao" placeholder="Adicione observações ou detalhes do equipamento"></textarea>
+                      </fieldset>
+                
+                      <button type="submit" class="btn-submit">Cadastrar Equipamento</button>
+                    </form>
+                  </main>
+            </div>
         </main>
     </div>
 </body>
