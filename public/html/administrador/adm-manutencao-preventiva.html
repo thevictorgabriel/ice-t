@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manutenção Preventiva</title>
+    <link rel="stylesheet" href="../../css/administrador.css">
+    <link rel="stylesheet" href="./adm-style/adm.css">
+    <link rel="icon" href="../../img/logo-IceT.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+        <aside class="sidebar">
+            <div class="logo">
+                <span class="snowflake">❄️</span> Ice T
+            </div>
+            <nav class="menu">
+                <a href="./administrador.html" class="menu-item active">
+                    <span class="icon">🗂️</span> PMOC
+                </a>
+                <a href="./adm-manutencao-corretiva.html" class="menu-item">
+                    <span class="icon">🔧</span> Solicitações
+                </a>
+                <a href="./adm-manutencao-preventiva.html" class="menu-item">
+                    <span class="icon">🛠️</span> Manutenção Preventiva
+                </a>
+                <a href="./adm-ordem-servico.html" class="menu-item">
+                    <span class="icon">📋</span> Ordem de Serviço
+                </a>
+                <a href="./adm-relatorio.html" class="menu-item">
+                    <span class="icon">📄</span> Relatório e Histórico
+                </a>
+                <a href="./adm-equipamento.html" class="menu-item">
+                    <span class="icon">🖥️</span> Equipamentos
+                </a>
+                <a href="../home.html" class="menu-item">
+                    <span class="icon">🏠</span> Página Inicial
+                </a>
+            </nav>
+
+            <div class="user">
+                <a class="link-user" href="./adm-user.html">
+                    <img src="../../img/user-avatar.png" alt="Usuária" class="avatar">
+                    <div class="user-info">
+                        <span class="user-name">Renata</span>
+                        <span class="user-role">Administradora</span>
+                    </div>
+                </a>
+            </div>
+        </aside>
+        <main class="main-content">
+            <h2>Manutenção Preventiva</h2>
+            <div class="content-box">
+                <section class="form-section">
+                    <h2>Formulário de Solicitação</h2>
+                    <div class="form-group">
+                        <select id="bloco">
+                            <option>Bloco</option>
+                            <option>Bloco A</option>
+                            <option>Bloco B</option>
+                            <option>Bloco C</option>
+                            <option>Bloco D</option>
+                            <option>Bloco E</option>
+                        </select>
+                        <input class="numeroSala" type="number" placeholder="Número da sala" id="numeroSala">
+                        <select id="equipamento">
+                            <option>Equipamento</option>
+                            <option>Equipamento 1</option>
+                            <option>Equipamento 2</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <h2 for="descricao">Descrição</h2>
+                        <textarea id="descricao" rows="3"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <h2 for="data">Data</h2>
+                        <input class="data" type="date" id="data" name="data">
+                    </div>
+                    <button class="submit-button" id="btnSolicitarManutenção">Solicitar Manutenção</button>
+                </section>
+                
+                <section class="status-section">
+                    <h2>Acompanhamento</h2>
+                    <div>
+                        <ul id="list" class="manutencao_corretiva-list">
+            
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
